@@ -3801,7 +3801,6 @@ THREE.EarthControls = function ( camera, renderer, scene ) {
 		scope.scene.add(scope.pivotNode);
 		scope.pivotNode.position.copy(pivot);
 
-		console.log("button: ",event.button)
 		if (event.button === THREE.MOUSE.LEFT && !event.ctrlKey) {
 		  state = STATE.DRAG;
 		} else if (event.button === THREE.MOUSE.MIDDLE || (event.button === THREE.MOUSE.LEFT && event.ctrlKey)) {
